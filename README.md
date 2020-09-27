@@ -1,3 +1,6 @@
+# Refs
+https://portswigger.net/web-security/sql-injection/cheat-sheet
+
 # My-SQL-Injection-things
 #mysql #sql #injection
 original: http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
