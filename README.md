@@ -1,14 +1,15 @@
 # Refs
-https://portswigger.net/web-security/sql-injection/cheat-sheet
+
 
 # Faster Blind MySQL Injection Using Bit Shifting
 I've read the paper in https://www.exploit-db.com/papers/17073
 and I've also developed a script to help us brute-force the data faster by using bit shifting method
 
 The script's name "bit-shifting-sqli.py"
-# My-SQL-Injection-things
-#mysql #sql #injection
-original: http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
+# Cheat sheet
+1, https://portswigger.net/web-security/sql-injection/cheat-sheet
+
+2,: http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
 
 
 | Version                      | SELECT @@version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
