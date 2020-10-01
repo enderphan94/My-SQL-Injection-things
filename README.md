@@ -1,6 +1,3 @@
-# Refs
-
-
 # Faster Blind MySQL Injection Using Bit Shifting
 I've read the paper in https://www.exploit-db.com/papers/17073
 and I've also developed a script to help us brute-force the data faster by using bit shifting method
